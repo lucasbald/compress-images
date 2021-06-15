@@ -1,12 +1,12 @@
 
 const compress_images = require('compress-images');
 
-const INPUT_path_to_your_images = 'imagePath/image*.{jpg,JPG,jpeg,JPEG,png,svg,gif}';
-const OUTPUT_path = 'imageOutputPath/new-image';
+const IMAGE_INPUT_PATH = 'imagePath/*.{jpg,JPG,jpeg,JPEG,png,svg,gif}';
+const IMAGE_OUTPUT_PATH = 'imageOutputPath/compressed-';
 
 compress_images(
-    INPUT_path_to_your_images,
-    OUTPUT_path, 
+    IMAGE_INPUT_PATH,
+    IMAGE_OUTPUT_PATH, 
     {
         compress_force: false, 
         statistic: true, 
